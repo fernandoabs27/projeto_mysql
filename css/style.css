@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 4px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+#btn-busca {
+    border: none;
+    background-color: transparent;
+}
+
+.container-busca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-tabela {
+    display: flex;
+    margin: 1rem;
+
+}
+
+.icone-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 20%;
+    background-color: cornsilk;
+    border-radius: 4px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container-inputs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icone-verde {
+    color: green;
+}
+
+.icone-azul {
+    color: blue;
+}
+
+.icone-vermelho {
+    color: red;
+}
+
+button {
+    border: 1px solid grey;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 4px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+.container-btn {
+    margin: 4px;
+}
+
+#btn-criar {
+    border: 1px solid darkkhaki;
+}
+
+#btn-criar:hover {
+    background-color: darkkhaki;
+}
+
+.container-menu {
+    margin: 1rem;
+}
+
+.container-menu ul {
+    list-style-type: none;
+}
+
+.container-menu a {
+    color: white;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+    margin: 1rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#exibe {
+    visibility: hidden;
+    text-align: center;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 1rem;
+    min-width: 250px;
+    background-color: #333;
+}
+
+#exibe.show {
+    visibility: visible;
+    animation: entrada 0.5s, saida 0.5s 2.5s;
+}
+
+@keyframes entrada {
+    from {
+        top: 0;
+        opacity: 0;
+    }
+
+    to {
+        top: 1rem;
+        opacity: 1;
+    }
+}
+
+@keyframes saida {
+    from {
+        top: 1rem;
+        opacity: 1;
+    }
+
+    to {
+        top: 0;
+        opacity: 0;
+    }
+}
